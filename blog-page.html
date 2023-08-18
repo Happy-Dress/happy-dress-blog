@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Blog Page</title>
+    <style>
+      * {
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .bread-crumbs {
+        display: flex;
+        width: 100%;
+        padding: 24px 120px;
+        align-items: flex-start;
+        gap: 6px;
+        color: #ababab;
+        font-family: Roboto;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+
+      .introduction {
+        width: 100%;
+        margin: 10px auto 100px auto;
+        position: relative;
+      }
+
+      .photo-large {
+        width: 540px;
+        height: 720px;
+        background-image: url(./assets/assets_2.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: auto;
+        z-index: -1;
+      }
+
+      .typography {
+        font-family: Roboto;
+        font-size: 144px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+
+      .brown {
+        text-transform: uppercase;
+        position: absolute;
+        top: 64px;
+        margin-left: 1.2%;
+        z-index: 1;
+        color: var(--accent, rgba(167, 82, 20, 0.8));
+      }
+
+      .black {
+        position: absolute;
+        top: 200px;
+        margin-left: 14%;
+        z-index: 1;
+        color: var(--text-primary, rgba(34, 17, 34, 0.9));
+      }
+      .photo-middle {
+        position: absolute;
+        margin-left: 70%;
+        top: 100px;
+        width: 397px;
+        height: 529px;
+        background-image: url(./assets/assets_3.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .photo-mini {
+        width: 255px;
+        height: 340px;
+        position: absolute;
+        margin-left: 24%;
+        top: 480px;
+        background-image: url(./assets/assets_1.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: -120px 50%;
+      }
+
+      .introduction-text {
+        width: 397px;
+        height: 134px;
+        position: absolute;
+        margin-left: 70%;
+        top: 673px;
+        color: var(--text-secondary, rgba(33, 33, 33, 0.5));
+        text-align: justify;
+        font-family: Roboto;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.72px;
+      }
+      .my_style-photography {
+        position: relative;
+      }
+      .sirname {
+      }
+      .name {
+      }
+      .manifest {
+        position: absolute;
+        width: 1110px;
+        color: var(--text-primary, rgba(34, 17, 34, 0.9));
+        text-align: right;
+        font-family: Roboto;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+      }
+      .my_style-photo_1 {
+      }
+      .my_style-photo_2 {
+      }
+      .my_style-text {
+        position: absolute;
+        width: 538px;
+        height: 134px;
+        color: var(--text-secondary, rgba(33, 33, 33, 0.5));
+        text-align: justify;
+        font-family: Roboto;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.36px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bread-crumbs">Главная > Блог</div>
+    <section class="introduction">
+      <div class="photo-large"></div>
+      <h1 class="typography brown">Wedding</h1>
+      <h1 class="typography black">photo</h1>
+      <div class="photo-middle"></div>
+      <div class="photo-mini"></div>
+      <p class="introduction-text">
+        Каждая пара, которая решает вступить в брак, хочет, чтобы этот день
+        запомнился на всю жизнь. Моя задача заключается в том, чтобы создать
+        красивые и эмоциональные фотографии, которые будут напоминать вам о
+        вашем особенном дне на протяжении всей жизни.
+      </p>
+    </section>
+    <section class="my_style-photography">
+      <h1 class="sirname">Майборода</h1>
+      <h1 class="name">Сергей</h1>
+      <h2 class="manifest">
+        Мой стиль фотографии - это яркие и насыщенные цвета, натуральное
+        освещение и красивые композиции
+      </h2>
+      <div class="my_style-photo_1"></div>
+      <div class="my_style-photo_2"></div>
+      <p class="my_style-text">
+        Я всегда стремлюсь поймать идеальный момент и запечатлеть его на фото.
+        Уделяю внимание деталям, таким как красивые облака, прекрасные цветы и
+        т.д. Это позволяет мне создавать фотографии, которые не только передают
+        момент, но и заставляют зрителя задуматься и насладиться красотой мира
+        вокруг нас.
+      </p>
+    </section>
+    <script></script>
+  </body>
+</html>
