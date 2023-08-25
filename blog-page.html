@@ -307,7 +307,7 @@
         color: rgba(34, 17, 34, 0.9);
         display: flex;
         justify-content: center;
-        margin-bottom: -50px;
+        margin-bottom: 20px;
       }
       .block_4-h2 a {
         display: inline;
@@ -326,6 +326,124 @@
         font-size: 32px;
       }
       .block_4-social {
+        margin: -100px auto 0px auto;
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .block_4_social_icons {
+      }
+      .block_4-phone {
+        color: rgba(34, 17, 34, 0.9);
+        text-align: right;
+        font-family: Roboto;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        flex-basis: 60%;
+      }
+
+      .popular {
+        display: flex;
+        width: 100%;
+        padding: 120px 0px;
+        flex-direction: column;
+        align-items: center;
+        gap: 48px;
+      }
+      .popular_text {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        color: rgba(34, 17, 34, 0.9);
+        text-align: center;
+        font-family: Roboto;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+      }
+      .popular-card-block {
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+      }
+      .popular_card {
+        display: flex;
+        flex-flow: column;
+        gap: 40px;
+        border: 1px solid rgba(33, 33, 33, 0.5);
+        background: #f6f6f6;
+        box-shadow: 0px 4px 8px 0px rgba(55, 40, 55, 0.2),
+          4px 0px 8px 0px rgba(55, 40, 55, 0.25);
+        padding: 12px;
+      }
+
+      .popular_card-img {
+        width: 320px;
+        height: 440px;
+        background-image: url(./assets/assets_13.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 35% 50%;
+      }
+
+      .popular-card-content {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        gap: 24px;
+        align-self: stretch;
+      }
+
+      .popular-card-text {
+        color: rgba(34, 17, 34, 0.9);
+        text-align: center;
+        font-family: Roboto;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      .popular_size {
+        text-align: left;
+        color: rgba(33, 33, 33, 0.5);
+        font-family: Roboto;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      .popular_size span:not(:first-child) {
+        color: rgba(33, 33, 33, 0.5);
+        width: 21px;
+        height: 21px;
+        border: 1px solid rgba(33, 33, 33, 0.5);
+        font-family: Roboto;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-left: 5px;
+        padding: 2px;
+      }
+
+      .popular_color {
+        color: rgba(33, 33, 33, 0.5);
+        font-family: Roboto;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+
+      .popular_color img {
+        margin: 0 3px;
       }
     </style>
   </head>
@@ -408,7 +526,94 @@
           >https://mywed.com/ru/<br />photographer/sergeimaib/</a
         >
       </h2>
-      <div class="block_4-social"></div>
+    </section>
+    <section class="block_4-social">
+      <div class="block_4_social_icons">
+        <a
+          href="https://www.instagram.com/fotomaib/?igshid=NTc4MTIwNjQ2YQ%3D%3D"
+          target="_blank"
+          ><img src="./assets/instagram.svg" alt="instagram_icon"
+        /></a>
+        <a href="https://vk.com/fotomaib" target="_blank" style="margin: 0 56px"
+          ><img src="./assets/VK.svg" alt="VK_icon"
+        /></a>
+        <a
+          href="https://mywed.com/ru/photographer/sergeimaib/?fbclid=PAAaYLupfJ0xGI40egAa9tD9p1ImS1H5mOB90KNzVu4KbZQFyff9rzln8CuUA"
+          target="_blank"
+          ><img src="./assets/browser.svg" alt="browser_icon" />
+        </a>
+      </div>
+      <p class="block_4-phone">+375 33 612 53 81</p>
+    </section>
+
+    <section class="popular">
+      <p class="popular_text">Популярное</p>
+      <div class="popular-card-block">
+        <div class="popular_card">
+          <div class="popular_card-img"></div>
+          <div class="popular-card-content">
+            <p class="popular-card-text">Платье кружевное</p>
+            <p class="popular_size">
+              <span style="margin-right: 80px">Размеры:</span>
+              <span>36</span><span>38</span><span>40</span><span>42</span>
+            </p>
+            <p class="popular_color">
+              <span style="margin-right: 120px">Цвет:</span>
+              <img src="./assets/color_1.svg" alt="color_icon" />
+              <img src="./assets/color_2.svg" alt="color_icon" />
+              <img src="./assets/color_3.svg" alt="color_icon" />
+            </p>
+          </div>
+        </div>
+        <div class="popular_card">
+          <div class="popular_card-img"></div>
+          <div class="popular-card-content">
+            <p class="popular-card-text">Платье кружевное</p>
+            <p class="popular_size">
+              <span style="margin-right: 80px">Размеры:</span>
+              <span>36</span><span>38</span><span>40</span><span>42</span>
+            </p>
+            <p class="popular_color">
+              <span style="margin-right: 120px">Цвет:</span>
+              <img src="./assets/color_1.svg" alt="color_icon" />
+              <img src="./assets/color_2.svg" alt="color_icon" />
+              <img src="./assets/color_3.svg" alt="color_icon" />
+            </p>
+          </div>
+        </div>
+        <div class="popular_card">
+          <div class="popular_card-img"></div>
+          <div class="popular-card-content">
+            <p class="popular-card-text">Платье кружевное</p>
+            <p class="popular_size">
+              <span style="margin-right: 80px">Размеры:</span>
+              <span>36</span><span>38</span><span>40</span><span>42</span>
+            </p>
+            <p class="popular_color">
+              <span style="margin-right: 120px">Цвет:</span>
+              <img src="./assets/color_1.svg" alt="color_icon" />
+              <img src="./assets/color_2.svg" alt="color_icon" />
+              <img src="./assets/color_3.svg" alt="color_icon" />
+            </p>
+          </div>
+        </div>
+        <div class="popular_card">
+          <div class="popular_card-img"></div>
+          <div class="popular-card-content">
+            <p class="popular-card-text">Платье кружевное</p>
+            <p class="popular_size">
+              <span style="margin-right: 80px">Размеры:</span>
+              <span>36</span><span>38</span><span>40</span><span>42</span>
+            </p>
+            <p class="popular_color">
+              <span style="margin-right: 120px">Цвет:</span>
+              <img src="./assets/color_1.svg" alt="color_icon" />
+              <img src="./assets/color_2.svg" alt="color_icon" />
+              <img src="./assets/color_3.svg" alt="color_icon" />
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
     <script></script>
   </body>
