@@ -241,6 +241,12 @@
       .text:hover {
         color: rgba(167, 82, 20, 0.8);
       }
+      .first:hover,
+      .second:hover,
+      .third:hover,
+      .fourth:hover {
+        cursor: pointer;
+      }
       .first {
         width: 195px;
         height: 263px;
@@ -262,12 +268,64 @@
         background-size: cover;
         background-repeat: no-repeat;
       }
-      .forth {
+      .fourth {
         width: 255px;
         height: 340px;
         background-image: url(./assets/assets_11.png);
         background-size: cover;
         background-repeat: no-repeat;
+      }
+
+      /* block_4----------------------------------------------------------------------------------------- */
+
+      .block_4 {
+        margin: 120px auto;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 70px;
+        border-bottom: 2px solid #c4c4c4;
+        padding-bottom: 0px;
+      }
+      .block_4-photo {
+        width: 100%;
+        height: 1395px;
+        background-image: url(./assets/assets_12.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 35% 50%;
+      }
+
+      .block_4-h2 {
+        width: 100%;
+        color: rgba(34, 17, 34, 0.9);
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        color: rgba(34, 17, 34, 0.9);
+        display: flex;
+        justify-content: center;
+        margin-bottom: -50px;
+      }
+      .block_4-h2 a {
+        display: inline;
+        color: rgba(34, 17, 34, 0.9);
+        width: 32%;
+        word-wrap: break-word;
+        height: auto;
+        text-align: right;
+        margin-left: -43px;
+        font-size: 32px;
+        letter-spacing: -1px;
+      }
+
+      .block_4-h2 span {
+        white-space: nowrap;
+        font-size: 32px;
+      }
+      .block_4-social {
       }
     </style>
   </head>
@@ -317,24 +375,41 @@
       </p>
       <div class="block_3-photos">
         <div class="block_3_image-small">
-          <div class="first"></div>
+          <a href="https://t.me/Koderkup" target="_blank">
+            <div class="first"></div>
+          </a>
           <p class="text">Съемка свадебных торжеств</p>
         </div>
         <div class="block_3_image-large">
-          <div class="second"></div>
+          <a href="https://t.me/Koderkup" target="_blank">
+            <div class="second"></div>
+          </a>
           <p class="text">Съемка помолвок</p>
         </div>
         <div class="block_3_image-small">
-          <div class="third"></div>
+          <a href="https://t.me/Koderkup" target="_blank">
+            <div class="third"></div>
+          </a>
           <p class="text">LoveStory</p>
         </div>
         <div class="block_3_image-large">
-          <div class="forth"></div>
+          <a href="https://t.me/Koderkup" target="_blank">
+            <div class="fourth"></div>
+          </a>
           <p class="text">Семейное фото</p>
         </div>
       </div>
     </section>
-
+    <section class="block_4">
+      <div class="block_4-photo"></div>
+      <h2 class="block_4-h2">
+        <span>Вы можете найти меня в Instagram @fotomaib или на сайте</span>
+        <a href="https://mywed.com/ru/photographer/sergeimaib" target="_blank"
+          >https://mywed.com/ru/<br />photographer/sergeimaib/</a
+        >
+      </h2>
+      <div class="block_4-social"></div>
+    </section>
     <script></script>
   </body>
 </html>
