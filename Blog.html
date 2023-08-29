@@ -14,6 +14,25 @@
       * {
         box-sizing: border-box;
       }
+      .bread-crumbs {
+        display: flex;
+        width: 100%;
+        padding: 24px 120px;
+        align-items: flex-start;
+        gap: 6px;
+        color: #ababab;
+        font-family: Roboto;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+
+      @media screen and (max-width: 960px) {
+        .bread-crumbs {
+          display: none;
+        }
+      }
       .block-1 {
         display: grid;
         width: 100%;
@@ -421,9 +440,158 @@
       }
     </style>
     <!-- block-3------------------------------------------------------------------------------------------- -->
-    <style></style>
+    <style>
+      .block_3 {
+        display: flex;
+        flex-flow: row nowrap;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 5%;
+        margin-top: 5%;
+      }
+      .block_3-scroll {
+        overflow-x: scroll;
+        overflow-y: hidden;
+      }
+      .block_3-text {
+        width: 24%;
+        color: rgba(33, 33, 33, 0.5);
+        text-align: justify;
+        font-family: Roboto;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+
+      .block_3-photos {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 20px;
+      }
+
+      .block_3_image-small,
+      .block_3_image-large {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 24px;
+      }
+
+      .text {
+        width: 100%;
+        font-family: Roboto;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        color: rgba(34, 17, 34, 0.9);
+        vertical-align: top;
+        max-height: 22px;
+      }
+
+      .text:hover {
+        color: rgba(167, 82, 20, 0.8);
+      }
+      .first:hover,
+      .second:hover,
+      .third:hover,
+      .fourth:hover {
+        cursor: pointer;
+      }
+      .first {
+        width: 195px;
+        height: 263px;
+        background-image: url(./assets/assets_8.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .second {
+        width: 255px;
+        height: 340px;
+        background-image: url(./assets/assets_9.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .third {
+        width: 195px;
+        height: 263px;
+        background-image: url(./assets/assets_10.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .fourth {
+        width: 255px;
+        height: 340px;
+        background-image: url(./assets/assets_11.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      @media screen and (max-width: 1460px) {
+        .block_3-text {
+          width: 20%;
+        }
+      }
+      @media screen and (max-width: 1360px) {
+        body {
+          overflow-x: hidden;
+        }
+        .block_3 {
+          width: 100%;
+          flex-flow: column-reverse;
+          justify-content: center;
+          align-items: center;
+          margin-top: 15%;
+        }
+        .block_3-text {
+          width: 90%;
+          padding: 2%;
+        }
+        .block_3-scroll {
+          width: 100%;
+          overflow-x: scroll;
+          overflow-y: hidden;
+        }
+      }
+      @media screen and (max-width: 1060px) {
+        .text {
+          text-align: center;
+        }
+      }
+      @media screen and (max-width: 968px) {
+        .block_3 {
+          margin-top: 12%;
+        }
+        .block_3-photos {
+          width: 110%;
+        }
+      }
+       @media screen and (max-width: 860px) {
+        .block_3-photos {
+          width: calc(160% - 1vw);
+        }
+       }
+
+       @media screen and (max-width: 600px) {
+        .block_3-photos {
+          width: calc(220% - 1vw);
+        }
+       }
+
+       @media screen and (max-width: 420px) {
+        .block_3-photos {
+          width: calc(320% - 1vw);
+        }
+       }
+    </style>
   </head>
   <body>
+    <div class="bread-crumbs">Главная > Блог</div>
     <section class="block-1">
       <div class="photo-large"></div>
       <h1 class="typography brown">Wedding</h1>
@@ -453,6 +621,45 @@
         момент, но и заставляют зрителя задуматься и насладиться красотой мира
         вокруг нас.
       </p>
+    </section>
+    <section class="block_3">
+      <p class="block_3-text">
+        В своей работе я предлагаю съемку свадебных торжеств, лавстори и
+        помолвок, а также портретов и семейных фотографий.
+        <br />
+        <br />
+        При съемке свадебных торжеств я уделяю особое внимание деталям, чтобы
+        запечатлеть все самые важные моменты и создать незабываемые
+        воспоминания.
+      </p>
+      <div class="block_3-scroll">
+        <div class="block_3-photos">
+          <div class="block_3_image-small">
+            <a href="https://t.me/Koderkup" target="_blank">
+              <div class="first"></div>
+            </a>
+            <p class="text">Съемка свадебных торжеств</p>
+          </div>
+          <div class="block_3_image-large">
+            <a href="https://t.me/Koderkup" target="_blank">
+              <div class="second"></div>
+            </a>
+            <p class="text">Съемка помолвок</p>
+          </div>
+          <div class="block_3_image-small">
+            <a href="https://t.me/Koderkup" target="_blank">
+              <div class="third"></div>
+            </a>
+            <p class="text">LoveStory</p>
+          </div>
+          <div class="block_3_image-large">
+            <a href="https://t.me/Koderkup" target="_blank">
+              <div class="fourth"></div>
+            </a>
+            <p class="text">Семейное фото</p>
+          </div>
+        </div>
+      </div>
     </section>
   </body>
 </html>
