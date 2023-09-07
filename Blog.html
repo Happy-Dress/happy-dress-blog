@@ -17,6 +17,7 @@
         align-items: center;
         background-color: rgba(246, 246, 246, 1);
         margin: 0;
+        overflow-y: hidden;
       }
       * {
         box-sizing: border-box;
@@ -420,7 +421,6 @@
       .block_3-scroll {
         overflow-x: hidden;
         overflow-y: hidden;
-        padding-bottom: 8px;
       }
       .block_3-text {
         width: 24%;
@@ -437,7 +437,10 @@
         display: flex;
         flex-flow: row nowrap;
         align-items: flex-end;
+        overflow-y: hidden;
+        overflow-x: auto;
         gap: 20px;
+        padding-bottom: 10px;
       }
 
       .block_3-photos a {
