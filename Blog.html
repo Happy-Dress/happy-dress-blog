@@ -17,6 +17,7 @@
         align-items: center;
         background-color: rgba(246, 246, 246, 1);
         margin: 0;
+        overflow-y: hidden;
       }
       * {
         box-sizing: border-box;
@@ -420,7 +421,6 @@
       .block_3-scroll {
         overflow-x: hidden;
         overflow-y: hidden;
-        padding-bottom: 8px;
       }
       .block_3-text {
         width: 24%;
@@ -437,7 +437,10 @@
         display: flex;
         flex-flow: row nowrap;
         align-items: flex-end;
+        overflow-y: hidden;
+        overflow-x: auto;
         gap: 20px;
+        padding-bottom: 10px;
       }
 
       .block_3-photos a {
@@ -576,7 +579,7 @@
         font-weight: 600;
         line-height: normal;
         display: inline-block;
-        justify-content: center;
+        text-align: center;
         margin-bottom: 20px;
       }
       .block_4-h2 a {
@@ -586,13 +589,13 @@
         word-wrap: break-word;
         height: auto;
         text-align: right;
-        font-size: 32px;
+        font-size: 24px;
         letter-spacing: -1px;
       }
 
       .block_4-h2 span {
         white-space: nowrap;
-        font-size: 32px;
+        font-size: 24px;
       }
       .block_4-social {
         width: 80%;
@@ -602,11 +605,16 @@
         margin: 32px auto 37px;
       }
 
+      .block_4-social img {
+        width: 36px;
+        height: 36px;
+      }
+
       .block_4-phone {
         color: rgba(34, 17, 34, 0.9);
         text-align: right;
         font-family: Roboto, sans-serif;
-        font-size: 32px;
+        font-size: 28px;
         font-style: normal;
         font-weight: 600;
         line-height: normal;
@@ -626,14 +634,13 @@
         }
         .block_4-h2 a {
           width: 70%;
-          text-align: center;
         }
 
         .block_4-h2 span {
           width: 70%;
-          text-align: center;
         }
       }
+
       @media screen and (max-width: 1280px) {
         .block_4 {
           width: 100%;
@@ -648,7 +655,7 @@
           flex-flow: column;
           justify-content: center;
           align-items: center;
-          font-size: 24px;
+          font-size: 18px;
           text-align: center;
         }
 
@@ -682,10 +689,6 @@
         .block_4-photo {
           width: 100vw;
         }
-
-        .block_4-h2 span, .block_4-h2 a {
-          font-size: 18px;
-        }
       }
 
       @media screen and (max-width: 768px) {
@@ -702,12 +705,10 @@
           white-space: normal;
           width: 80%;
           text-align: center;
-          font-size: 24px;
         }
         .block_4-h2 a {
           white-space: normal;
           text-align: center;
-          font-size: 24px;
         }
         .block_4-social-icons {
           margin: auto;
@@ -801,7 +802,7 @@
       <h2 class="block_4-h2">
         <span>Вы можете найти меня в Instagram @fotomaib или на сайте</span>
         <a href="https://mywed.com/ru/photographer/sergeimaib" target="_blank"
-          >https://mywed.com/ru/<br />photographer/sergeimaib/</a
+          >https://mywed.com/ru/photographer/sergeimaib/</a
         >
       </h2>
     </section>
